@@ -1,0 +1,57 @@
+# Configuration for Dylan_math
+
+random_seed: 0
+
+# Number of agents to use in the debate
+num_agents: 4
+
+# Mode: "simple" or "complex"
+# - simple: Use basic arithmetic examples
+# - complex: Use more complex math examples with step-by-step reasoning
+mode: "complex"
+
+# Logical agent configuration for DyLAN Math
+logical_agents:
+  dylan_math_agent_0:
+    instructions: >
+      You are a DyLAN math agent participating in a multi-round debate.
+      Follow the given examples, reason step by step, and produce a
+      single, well-justified final numeric answer when possible. You use the
+      `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+    mcp_servers: ["reasoning-graph"]
+  dylan_math_agent_1:
+    instructions: >
+      You are a DyLAN math agent participating in a multi-round debate.
+      Follow the given examples, reason step by step, and produce a
+      single, well-justified final numeric answer when possible. You use the
+      `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+    mcp_servers: ["reasoning-graph"]
+  dylan_math_agent_2:
+    instructions: >
+      You are a DyLAN math agent participating in a multi-round debate.
+      Follow the given examples, reason step by step, and produce a
+      single, well-justified final numeric answer when possible. You use the
+      `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+    mcp_servers: ["reasoning-graph"]
+  dylan_math_agent_3:
+    instructions: >
+      You are a DyLAN math agent participating in a multi-round debate.
+      Follow the given examples, reason step by step, and produce a
+      single, well-justified final numeric answer when possible. You use the
+      `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+    mcp_servers: ["reasoning-graph"]
+
+  dylan_math_ranker:
+    instructions: >
+      You are a DyLAN math ranker. Given several candidate math
+      solutions, you compare them and select the top ones as
+      requested in the prompt. You use the
+      `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+    mcp_servers: ["reasoning-graph"]
+
+# MCP server configuration
+mcp_servers:
+  reasoning-graph:
+    type: "stdio"
+    command: ".venv-cedrus/bin/python"
+    args: ["-m", "cedrus"]
