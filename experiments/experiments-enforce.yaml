@@ -11,6 +11,16 @@ eval_protocol: xverify
 method_groups:
   core_methods:
     - method: cot
+      config: config_mcp
+    - method: camel
+      config: config_mcp
+    - method: llm_debate
+      config: config_mcp
+    - method: mad
+      config: config_mcp
+    - method: self_consistency
+      config: config_mcp
+    - method: cot
       config: config_mcp_enf
     - method: camel
       config: config_mcp_enf
@@ -22,13 +32,21 @@ method_groups:
       config: config_mcp_enf
   agentverse_with_standard_configs:
     - method: agentverse
+      config: config_mcp_all
+    - method: agentverse
       config: config_mcp_all_enf
+    - method: agentverse
+      config: config_mcp_partial
     - method: agentverse
       config: config_mcp_partial_enf
   dylan_with_standard_configs:
     - method: dylan
+      config: config_mcp
+    - method: dylan
       config: config_mcp_enf
   mav_with_standard_configs:
+    - method: mav
+      config: config_mcp
     - method: mav
       config: config_mcp_enf
 
@@ -85,6 +103,8 @@ datasets:
       - dylan_with_standard_configs
     methods:
       - method: mav_gpqa
+        config: config_mcp
+      - method: mav_gpqa
         config: config_mcp_enf
 
   - name: GPQA-Diamond
@@ -93,6 +113,8 @@ datasets:
       - agentverse_with_standard_configs
       - dylan_with_standard_configs
     methods:
+      - method: mav_gpqa
+        config: config_mcp
       - method: mav_gpqa
         config: config_mcp_enf
 
@@ -103,7 +125,11 @@ datasets:
       - mav_with_standard_configs
     methods:
       - method: agentverse_mgsm
+        config: config_mgsm_mcp_all
+      - method: agentverse_mgsm
         config: config_mgsm_mcp_all_enf
+      - method: agentverse_mgsm
+        config: config_mgsm_mcp_partial
       - method: agentverse_mgsm
         config: config_mgsm_mcp_partial_enf
 
@@ -114,7 +140,11 @@ datasets:
       - mav_with_standard_configs
     methods:
       - method: agentverse_mgsm
+        config: config_mgsm_mcp_all
+      - method: agentverse_mgsm
         config: config_mgsm_mcp_all_enf
+      - method: agentverse_mgsm
+        config: config_mgsm_mcp_partial
       - method: agentverse_mgsm
         config: config_mgsm_mcp_partial_enf
 
@@ -123,6 +153,10 @@ datasets:
       - core_methods
       - agentverse_with_standard_configs
     methods:
+      - method: dylan_math
+        config: config_math_mcp
+      - method: mav_math
+        config: config_mcp
       - method: dylan_math
         config: config_math_mcp_enf
       - method: mav_math
@@ -147,6 +181,10 @@ datasets:
       - core_methods
       - agentverse_with_standard_configs
     methods:
+      - method: dylan_mmlu
+        config: config_mmlu_mcp
+      - method: mav_mmlu
+        config: config_mcp
       - method: dylan_mmlu
         config: config_mmlu_mcp_enf
       - method: mav_mmlu
