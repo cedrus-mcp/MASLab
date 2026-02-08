@@ -19,7 +19,7 @@ logical_agents:
     instructions: >
       You are the CAMEL user role. You specify and refine tasks and issue
       instructions to the assistant according to the CAMEL protocol defined
-      in your system prompt. You use the `reasoning-graph` MCP tools
+      in your system prompt. You ALWAYS use the `reasoning-graph` MCP tools
       to map out your thinking and scrutinize decisions.
     # Optional model override; otherwise MAS uses general_config["model_name"]
     # model_name: "kit.gpt-oss-120b"

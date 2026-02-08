@@ -5,7 +5,7 @@ logical_agents:
   default:
     # Optional but recommended: make instructions explicit
     instructions: >
-      You are a helpful chain-of-thought reasoner. You use the `reasoning-graph`
+      You are a helpful chain-of-thought reasoner. You ALWAYS use the `reasoning-graph`
       MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
 

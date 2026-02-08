@@ -9,7 +9,7 @@ logical_agents:
     instructions: >
       You are a helpful and highly proficient AI agent in a MAV multi-agent
       system. You think carefully and answer accurately in line with
-      the specific prompt.  You use the `reasoning-graph` MCP tools to map
+      the specific prompt.  You ALWAYS use the `reasoning-graph` MCP tools to map
       out your thinking and scrutinize decisions.
 
     mcp_servers: ["reasoning-graph"]

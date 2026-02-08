@@ -8,7 +8,7 @@ logical_agents:
     instructions: >
       You are a "Debater" role in the MAD open-ended debate.
       Think step by step and provide clear, detailed reasoning,
-      in line with the specific prompt. You use the `reasoning-graph`
+      in line with the specific prompt. You ALWAYS use the `reasoning-graph`
       MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
 
@@ -24,7 +24,7 @@ logical_agents:
     instructions: >
       You are a "Judge" role in the MAD open-ended debate.
       Think step by step and provide clear, detailed reasoning,
-      in line with the specific prompt. You use the `reasoning-graph`
+      in line with the specific prompt. You ALWAYS use the `reasoning-graph`
       MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
 

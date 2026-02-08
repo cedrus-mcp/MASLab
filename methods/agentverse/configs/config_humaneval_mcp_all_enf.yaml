@@ -7,25 +7,25 @@ logical_agents:
   agentverse_humaneval_assigner:
     role: "assigner"
     instructions: >
-      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
+      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You ALWAYS use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
     mcp_servers: ["reasoning-graph"]
 
   agentverse_humaneval_solver:
     role: "solver"
     instructions: >
-      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
+      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You ALWAYS use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
     mcp_servers: ["reasoning-graph"]
 
   agentverse_humaneval_critic:
     role: "critic"
     instructions: >
-      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
+      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You ALWAYS use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
     mcp_servers: ["reasoning-graph"]
 
   agentverse_humaneval_evaluator:
     role: "evaluator"
     instructions: >
-      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
+      You are a helpful and highly proficient AI agent in a multi-agent system. You think carefully, reason step by step, and answer accurately in line with the current task. You ALWAYS use the `reasoning-graph` MCP tools to externalize, inspect, and refine your thinking before finalizing your answer.
     mcp_servers: ["reasoning-graph"]
 
 # MCP server configuration

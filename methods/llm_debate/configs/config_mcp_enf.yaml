@@ -7,20 +7,20 @@ logical_agents:
   default:
     instructions: >
       You are a helpful assistant. You follow instructions
-      carefully. You use the `reasoning-graph` MCP tools to map out your thinking
+      carefully. You ALWAYS use the `reasoning-graph` MCP tools to map out your thinking
       and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
   debater_0:
     instructions: >
-      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You ALWAYS use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
   debater_1:
     instructions: >
-      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You ALWAYS use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
   debater_2:
     instructions: >
-      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
+      You are a helpful and highly competent AI assistant, participating in a multi-agent debate. You ALWAYS use the `reasoning-graph` MCP tools to map out your thinking and scrutinize decisions.
     mcp_servers: ["reasoning-graph"]
 
 # MCP server configuration
